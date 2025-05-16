@@ -32,7 +32,7 @@ function App() {
     passwordRef.current?.select();
     // passwordRef.current?.setSelectionRange(0,5);    use to select range .....
     window.navigator.clipboard.writeText(password);
-  })
+  },[password])
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-900 via-green-950 to-black flex items-center justify-center px-4">
